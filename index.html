@@ -4,6 +4,9 @@
         <title>atletic-pharma</title>
         <link rel="stylesheet" href="./index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     <body>
         <div id="main-container">
@@ -160,6 +163,45 @@
                     </div>
                 </div>
             </div>
+            <div id="photo-review">
+                <div id="header">
+                    <div id="photo">
+                        <div id="img-container">
+                            <img src="./assets/svg/photo-camera.svg">
+                        </div>
+                        <h2>Фото отзывы</h2>
+                    </div>
+                    <div id="button">
+                        <h2>Все отзывы</h2>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/review.png">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="./assets/img/review.png"></div>
+                        <div class="swiper-slide"><img
+                                src="./assets/img/review.png"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+        // Инициализация Swiper
+        const swiper = new Swiper('.swiper', {
+            // Параметры
+            direction: 'horizontal', // Направление (горизонтальное или вертикальное)
+            loop: true, // Бесконечная прокрутка
+            pagination: {
+                el: '.swiper-pagination', // Пагинация
+                clickable: false, // Кликабельность пагинации
+            },
+        });
+    </script>
     </body>
 </html>
