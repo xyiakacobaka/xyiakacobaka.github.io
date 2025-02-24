@@ -55,7 +55,7 @@ h2 span {
   border-radius: 1rem;
   box-sizing: border-box;
 }
-img {
+#frame1 img {
   width: 146.38px;
 }
 h1 {
@@ -137,6 +137,7 @@ h2 {
 #frame2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   width: calc(100vw - 2rem);
   height: 351.22px;
@@ -538,6 +539,11 @@ h2 {
 .swiper {
   width: 100%;
   height: 174px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
 }
 .swiper-slide {
   width: 238.43px;
@@ -552,4 +558,86 @@ h2 {
   gap: 6.27px;
   width: 862.82px;
   height: 160px !important;
+}
+.swiper-pagination {
+  position: unset !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+  justify-content: center;
+  width: 54.25px;
+  height: 6px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 6.77px;
+  height: 6px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 18.95px;
+  height: 6px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 138, 0, 0.5),
+      rgba(255, 138, 0, 0.5)
+    ),
+    #ff9900;
+  border-radius: 30px;
+}
+#video-review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
+  gap: 1rem;
+  width: 100%;
+  height: 270px;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+#video-review #header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+  height: 32px;
+}
+#PS {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 0px;
+  gap: 40px;
+  width: 100%;
+  height: 856px;
+}
+#PS #PS-text-container {
+  /* Frame 2446 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 328px;
+height: 392px;
+}
+#PS h1{
+font-weight: 700;
+font-size: 1.25rem;
+line-height: 1.5rem;
+color: #FFFFFF;
+}
+#PS h2{
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.5rem;
+color: #FFFFFF;
+opacity: 0.7;
 }
