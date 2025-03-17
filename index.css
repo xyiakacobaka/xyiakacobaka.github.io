@@ -50,7 +50,6 @@ h2 span {
   padding: 1.5rem;
   gap: 1.5rem;
   width: 100%;
-  height: 28.25rem;
   background: linear-gradient(
       180deg,
       rgba(11, 112, 226, 0.7) 0%,
@@ -185,9 +184,50 @@ h2 {
   padding: 0px 0px;
 }
 #embleme {
-  width: 100%;
+  width: 3rem;
   height: 3rem;
 }
+#reference {
+  width: 3rem;
+  height: 3rem;
+}
+#message {
+  width: 2rem;
+  height: 2rem;
+}
+#gmail {
+  width: 1.75rem;
+  width: 1.75rem;
+}
+#tg-icon {
+  width: 1.75rem;
+  width: 1.75rem;
+}
+#vk-icon {
+  width: 1.75rem;
+  width: 1.75rem;
+}
+#gift {
+  width: 2rem;
+  height: 2rem;
+}
+#cart {
+  width: 2rem;
+  height: 2rem;
+}
+#tg-icon-without-bg {
+  width: 1.246345996856rem;
+height: 1.05;
+}
+#photo-camera {
+  width: 2rem;
+  height: 2rem;
+}
+#video-camera {
+  width: 2rem;
+  height: 2rem;
+}
+
 #info-blocks-container h2 {
   font-weight: 700;
   font-size: 1rem;
@@ -204,7 +244,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 2, 5rem;
+  height: 2.5rem;
   justify-content: center;
 }
 #img-container {
@@ -215,8 +255,12 @@ h2 {
   height: 3rem;
 }
 #delivery-box {
-  width: 100%;
-  height: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+#bookmark {
+  width: 2rem;
+  height: 2rem;
 }
 #frame3 {
   display: flex;
@@ -225,7 +269,6 @@ h2 {
   padding: 1.5rem;
   gap: 1rem;
   width: 100%;
-  height: 18.5rem;
   background: linear-gradient(
       0deg,
       rgba(55, 172, 9, 0.1),
@@ -242,7 +285,6 @@ h2 {
   padding: 0px;
   gap: 1rem;
   width: 100%;
-  height: 11.5rem;
 }
 #frame3-label-container {
   display: flex;
@@ -290,7 +332,7 @@ h2 {
 }
 #links-conatiner h2 {
   margin: 0 auto;
-  width: 8.875rem;
+  width: 100%;
   height: 1.5rem;
   font-weight: 400;
   font-size: 0.875rem;
@@ -318,7 +360,7 @@ h2 {
   width: 1.25rem;
   height: 1.25rem;
 }
-#frame3-info-container #instuction {
+#instuction {
   width: 100%;
   height: 3rem;
   font-weight: 700;
@@ -333,7 +375,6 @@ h2 {
   padding: 1.5rem;
   gap: 1rem;
   width: 100%;
-  height: 17rem;
   background: #ffffff;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -471,7 +512,7 @@ h2 {
   box-sizing: border-box;
 }
 #subscribe h2 {
-  height: 1rem;
+  height: unset;
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1rem;
@@ -508,7 +549,6 @@ h2 {
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 0, 75rem;
   width: 10.375rem;
   height: 2rem;
   gap: 0.75rem;
@@ -666,132 +706,4 @@ h2 {
   line-height: 1.5rem;
   color: #ffffff;
   opacity: 0.7;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 2.0833333333vw;
-  }
-  #main-container {
-    width: 45rem;
-  }
-  #second-frames-container {
-    flex-direction: row;
-  }
-  #frame1 {
-    height: 23.125rem;
-  }
-  #frame1 #info-container {
-    height: 14.125rem;
-  }
-  #title-container {
-    height: 10.125rem;
-  }
-  #companyLabelH1 {
-    font-size: 2.25rem;
-    width: 42rem;
-    line-height: 2.8125rem;
-  }
-  #companyLabelH1 ::after {
-    content: "\A";
-    white-space: pre-wrap;
-  }
-  #companyLabelH2 {
-    width: 42rem;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-  #buttons-container {
-    flex-direction: row;
-    gap: 1rem;
-    width: 472px;
-  }
-  #migration-to-magazin {
-    width: 29.5rem;
-  }
-  #migration-to-magazin h2 {
-    width: 8.3125rem;
-  }
-  #migration-to-forum {
-    width: 1418.75rem;
-  }
-  #migration-to-forum h2 {
-    width: 8.1875rem;
-  }
-  #frame2 {
-    width: 100%;
-    height: unset;
-  }
-  #frame2-info-container {
-    gap: 1.5rem;
-    height: unset;
-    padding: 0px 1.5rem 1.5rem;
-  }
-  #frame2-info-container h2 {
-    line-height: 1.75rem;
-  }
-  #info-blocks-container {
-    flex-direction: row;
-    height: unset;
-  }
-  .info-block {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .img-container {
-    width: 3rem;
-    height: 3rem;
-  }
-  #text-container h2 {
-    font-size: 1rem;
-    line-height: 20px;
-  }
-  #text-container {
-    width: 10rem;
-  }
-  #text-container a {
-    font-size: 1rem;
-    line-height: 20px;
-    letter-spacing: 0px;
-  }
-  #frame4 {
-    height: 18.5rem;
-  }
-  #frame5 {
-    width: 45rem;
-    height: 14.8rem;
-    padding: 0px 0px 0px 2rem;
-    flex-direction: row;
-    gap: 1.375rem;
-  }
-  #frame5-info-container {
-    width: 24.4375rem;
-    height: 14.8rem;
-  }
-  #frame5-info-container h2 {
-    line-height: 2rem;
-  }
-  #bonus-blocks-container {
-    flex-direction: row;
-    gap: 1rem;
-  }
-  .bonus-block #text-container h2 {
-    width: 15rem;
-  }
-  #phone {
-    width: 17.1875rem;
-    height: 14.8rem;
-  }
-  .swiper {
-    height: 13.625rem;
-  }
-  .swiper-wrapper {
-    height: 12.75rem !important;
-  }
-  .swiper-slide {
-    width: 19rem !important;
-  }
-  .swiper-slide img{
-    height: 12.75rem !important;
-  }
 }

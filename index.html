@@ -3,6 +3,8 @@
   <head>
     <title>atletic-pharma</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./table.css" />
+    <link rel="stylesheet" href="./computer.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -30,11 +32,11 @@
           <div id="buttons-container">
             <div id="migration-to-magazin">
               <h2>Перейти в магазин</h2>
-              <img src="./assets/svg/arrow-right.svg" />
+              <img src="./assets/svg/arrow-right.svg" class="white-arrow"/>
             </div>
             <div id="migration-to-forum">
               <h2>Перейти на форум</h2>
-              <img src="./assets/svg/arrow-right.svg" />
+              <img src="./assets/svg/arrow-right.svg" class="white-arrow"/>
             </div>
           </div>
         </div>
@@ -44,26 +46,20 @@
             <h2>AthleticPharma — магазин провереный временем! 🦖</h2>
             <div id="info-blocks-container">
               <div class="info-block">
-                <div class="img-container">
                   <img src="./assets/svg/emblem.svg" id="embleme" />
-                </div>
                 <div id="text-container">
                   <h2>Работаем с 2010 года</h2>
                   <a href="#">пруф</a>
                 </div>
               </div>
               <div class="info-block">
-                <div class="img-container">
-                  <img id="delivery-box" src="./assets/svg/delivery-box.svg" />
-                </div>
+                <img id="delivery-box" src="./assets/svg/delivery-box.svg" />
                 <div class="text-container">
                   <h2>Отправка из России 🇷🇺</h2>
                 </div>
               </div>
               <div class="info-block">
-                <div class="img-container">
-                  <img id="delivery-box" src="./assets/svg/reference.svg" />
-                </div>
+                <img id="reference" src="./assets/svg/reference.svg" />
                 <div class="text-container">
                   <h2>Оригинальные препараты</h2>
                 </div>
@@ -76,9 +72,7 @@
         <div id="frame3">
           <div id="frame3-info-container">
             <div id="frame3-label-container">
-              <div id="img-container">
-                <img src="./assets/svg/bookmark.svg" />
-              </div>
+              <img src="./assets/svg/bookmark.svg" id="bookmark"/>
               <h2>
                 Рабочие домены <br />
                 (не забанены по РФ)
@@ -100,17 +94,15 @@
                 </div>
               </div>
             </div>
-            <a id="instuction" href="#">
-              Инструкция: Что делать, если магазин не открывается
-            </a>
           </div>
+          <a id="instuction" href="#">
+            Инструкция: Что делать, если магазин не открывается
+          </a>
         </div>
         <div id="frame4">
           <div id="label-container">
             <div id="title-container">
-              <div id="img-container">
-                <img src="./assets/svg/message.svg" />
-              </div>
+                <img src="./assets/svg/message.svg" id="message"/>
               <h2>Наши контакты</h2>
             </div>
             <h2>
@@ -118,21 +110,15 @@
             </h2>
           </div>
           <div id="media-container">
-            <div id="img-container">
-              <img src="./assets/svg/gmail.svg" />
-            </div>
+            <img src="./assets/svg/gmail.svg" id="gmail"/>
             <h2>athleticpharma@gmail.com</h2>
           </div>
           <div id="media-container">
-            <div id="img-container">
-              <img src="./assets/svg/tg-icon.svg" />
-            </div>
+            <img src="./assets/svg/tg-icon.svg" id="tg-icon"/>
             <h2>t.me/athleticpharmanet</h2>
           </div>
           <div id="media-container">
-            <div id="img-container">
-              <img src="./assets/svg/vk-icon.svg" />
-            </div>
+            <img src="./assets/svg/vk-icon.svg" id="vk-icon"/>
             <h2>vk.com/id175465219</h2>
           </div>
         </div>
@@ -145,9 +131,7 @@
           </h2>
           <div id="bonus-blocks-container">
             <div class="bonus-block">
-              <div id="img-container">
-                <img src="./assets/svg/gift.svg" />
-              </div>
+              <img src="./assets/svg/gift.svg" id="gift"/>
               <div id="text-container">
                 <h2>
                   <b>Подарки и скидки</b><br />
@@ -156,9 +140,7 @@
               </div>
             </div>
             <div class="bonus-block">
-              <div id="img-container">
-                <img src="./assets/svg/cart.svg" />
-              </div>
+              <img src="./assets/svg/cart.svg" id="cart"/>
               <div id="text-container">
                 <h2>
                   <b>ВСЕГДА рабочий домен </b><br />
@@ -169,9 +151,7 @@
           </div>
           <div id="subscribe">
             <h2>Подписаться</h2>
-            <div id="img-container">
-              <img src="./assets/svg/tg-icon-without-bg.svg" />
-            </div>
+            <img src="./assets/svg/tg-icon-without-bg.svg" id="tg-icon-without-bg"/>
           </div>
         </div>
         <img src="./assets/img/Mockup1.png" id="phone">
@@ -179,9 +159,7 @@
       <div id="photo-review">
         <div id="header">
           <div id="photo">
-            <div id="img-container">
-              <img src="./assets/svg/photo-camera.svg" id="phone-camera" />
-            </div>
+            <img src="./assets/svg/photo-camera.svg" id="photo-camera" />
             <h2>Фото отзывы</h2>
           </div>
           <div id="button">
@@ -209,9 +187,7 @@
       <div id="video-review">
         <div id="header">
           <div id="photo">
-            <div id="img-container">
-              <img src="./assets/svg/video-icon.svg" />
-            </div>
+              <img src="./assets/svg/video-icon.svg" id="video-camera"/>
             <h2>Видео отзывы</h2>
           </div>
           <div id="button">
