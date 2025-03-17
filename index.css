@@ -692,6 +692,10 @@ h2 {
     width: 42rem;
     line-height: 2.8125rem;
   }
+  #companyLabelH1 ::after {
+    content: "\A";
+    white-space: pre-wrap;
+  }
   #companyLabelH2 {
     width: 42rem;
     font-size: 1.125rem;
