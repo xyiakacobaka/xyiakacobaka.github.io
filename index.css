@@ -465,6 +465,9 @@ h2 {
   line-height: 1.5rem;
   color: #232323;
 }
+#phone {
+  display: none;
+}
 #add ::before {
   content: "\A";
   white-space: pre-wrap;
