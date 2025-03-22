@@ -21,15 +21,6 @@ body {
   display: flex;
   justify-content: center;
 }
-a {
-  color: #ff9900;
-}
-a:visited {
-  color: #ff8a0080;
-}
-h2 span {
-  color: #ff9900;
-}
 #main-container {
   display: flex;
   flex-direction: column;
@@ -129,7 +120,7 @@ h2 {
   gap: 0.25rem;
   width: 100%;
   height: 3.5rem;
-  border: 0.16rem solid #ffffff;
+  border: 0.08rem solid #ffffff;
   border-radius: 0.5rem;
 }
 #migration-to-forum h2 {
@@ -172,6 +163,7 @@ h2 {
 #frame2-info-container h2 {
   font-size: 1.25rem;
   font-weight: 700;
+  line-height: 1.75rem;
 }
 #info-blocks-container {
   display: flex;
@@ -182,6 +174,16 @@ h2 {
   height: 12rem;
   background: none;
   padding: 0px 0px;
+}
+#proof ::before {
+  content: "\A";
+  white-space: pre-wrap;
+}
+#proof span {
+  color: #ff9900;
+}
+.text-container #delivery {
+  line-height: 1.5rem;
 }
 #embleme {
   width: 3rem;
@@ -217,7 +219,7 @@ h2 {
 }
 #tg-icon-without-bg {
   width: 1.246345996856rem;
-height: 1.05;
+  height: 1.05;
 }
 #photo-camera {
   width: 2rem;
@@ -227,7 +229,6 @@ height: 1.05;
   width: 2rem;
   height: 2rem;
 }
-
 #info-blocks-container h2 {
   font-weight: 700;
   font-size: 1rem;
@@ -239,13 +240,6 @@ height: 1.05;
   gap: 1rem;
   width: 100%;
   align-items: center;
-}
-#text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 2.5rem;
-  justify-content: center;
 }
 #img-container {
   display: flex;
@@ -292,11 +286,9 @@ height: 1.05;
   align-items: flex-start;
   gap: 0.5rem;
   width: 100%;
-  height: 3rem;
   box-sizing: border-box;
 }
 #frame3-label-container h2 {
-  height: 3rem;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -307,6 +299,10 @@ height: 1.05;
 #frame3-label-container #img-container {
   width: 2rem;
   height: 2rem;
+}
+#domens ::before {
+  content: "\A";
+  white-space: pre-wrap;
 }
 #links-conatiner {
   display: flex;
@@ -362,11 +358,11 @@ height: 1.05;
 }
 #instuction {
   width: 100%;
-  height: 3rem;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
   text-decoration-line: underline;
+  color: #ff9900;
 }
 #frame4 {
   display: flex;
@@ -401,6 +397,10 @@ height: 1.05;
   width: 100%;
   height: 2rem;
 }
+#questions-annotation ::before {
+  content: "\A";
+  white-space: pre-wrap;
+}
 #label-container #title-container h2 {
   width: 8.5rem;
   height: 1.5rem;
@@ -410,7 +410,6 @@ height: 1.05;
   color: #232323;
 }
 #label-container h2 {
-  width: 17.5rem;
   height: 2.5rem;
   font-style: normal;
   font-weight: 400;
@@ -445,7 +444,6 @@ height: 1.05;
   padding: 0px 1.5rem;
   gap: 1.375rem;
   width: 100%;
-  height: 18.55rem;
   background: url(./assets/img/tg-background.png), #e7f1fd;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -462,11 +460,17 @@ height: 1.05;
 }
 #frame5-info-container h2 {
   width: 100%;
-  height: 4.5rem;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #232323;
+}
+#add ::before {
+  content: "\A";
+  white-space: pre-wrap;
+}
+#add span {
+  color: #ff9900;
 }
 #bonus-blocks-container {
   display: flex;
@@ -475,7 +479,6 @@ height: 1.05;
   padding: 0px;
   gap: 1rem;
   width: 100%;
-  height: 5.5rem;
 }
 .bonus-block {
   display: flex;
@@ -483,8 +486,7 @@ height: 1.05;
   align-items: center;
   padding: 0px;
   gap: 0.5rem;
-  width: 100%;
-  height: 2.25rem;
+  width: 15rem;
 }
 .bonus-block #text-container h2 {
   height: 2.25rem;
@@ -504,7 +506,7 @@ height: 1.05;
   align-items: center;
   padding: 0.75rem 2rem;
   gap: 0.625rem;
-  width: 60.71%;
+  width: 10.625rem;
   height: 2.55rem;
   background: linear-gradient(180deg, #46a9ee 0%, #3889d5 100%),
     linear-gradient(180deg, #ffaa00 0%, #ff782c 100%);
@@ -530,7 +532,6 @@ height: 1.05;
   padding: 1.5rem;
   gap: 1rem;
   width: 100%;
-  height: 100%;
   background: #ffffff;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -646,7 +647,6 @@ height: 1.05;
   padding: 1.5rem;
   gap: 1rem;
   width: 100%;
-  height: 100%;
   background: #ffffff;
   border-radius: 1rem;
   box-sizing: border-box;
