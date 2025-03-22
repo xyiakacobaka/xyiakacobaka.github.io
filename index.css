@@ -591,31 +591,21 @@ h2 {
   color: #ff9900;
 }
 .swiper {
-  width: 100%;
-  height: 10.875rem;
   display: flex !important;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: 10.875rem;
   justify-content: space-between;
-  padding: 0px;
 }
-.swiper-slide {
-  width: 14.901875rem !important;
+.swiper .swiper-wrapper {
   height: 10rem;
-  border-radius: 0.392156875rem;
 }
 .swiper-slide img {
   width: 100%;
-  height: 10rem;
+  height: 100%;
 }
-.swiper-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 0.391875rem;
-  width: 53.92625rem;
-  height: 10rem !important;
+.swiper-slide #show-more {
+  width: unset;
 }
 .swiper-pagination {
   position: unset !important;

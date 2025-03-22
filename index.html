@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>atletic-pharma</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./table.css" />
@@ -9,24 +10,21 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="./index.js" defer></script>
   </head>
   <body>
     <div id="main-container">
-      <div
-        class="frames-container"
-        id="first-frames-container">
+      <div class="frames-container" id="first-frames-container">
         <div id="frame1">
           <div id="info-container">
             <img src="./assets/img/logo.png" />
             <div id="title-container">
-              <h1 id="companyLabelH1"><span>Официальный сайт-визитка
-                </span>магазина
-                AthleticPharma.com</h1>
+              <h1 id="companyLabelH1">
+                <span>Официальный сайт-визитка </span>магазина
+                AthleticPharma.com
+              </h1>
               <h2 id="companyLabelH2">
                 Пояснительный текст почему и для чего эта визитка, как не
-                потерять
-                магазин и всегда быть на связи в 2-3 строки
+                потерять магазин и всегда быть на связи в 2-3 строки
               </h2>
             </div>
           </div>
@@ -105,8 +103,8 @@
               <h2>Наши контакты</h2>
             </div>
             <h2 id="questions-annotation">
-              Наши менеджеры ответят на все вопросы <span>по заказам и работе
-                магазина</span>
+              Наши менеджеры ответят на все вопросы
+              <span>по заказам и работе магазина</span>
             </h2>
           </div>
           <div id="media-container">
@@ -151,11 +149,12 @@
           </div>
           <div id="subscribe">
             <h2>Подписаться</h2>
-            <img src="./assets/svg/tg-icon-without-bg.svg"
+            <img
+              src="./assets/svg/tg-icon-without-bg.svg"
               id="tg-icon-without-bg" />
           </div>
         </div>
-        <img src="./assets/img/Mockup1.png" id="phone">
+        <img src="./assets/img/Mockup1.png" id="phone" />
       </div>
       <div id="photo-review">
         <div id="header">
@@ -179,7 +178,7 @@
               <img src="./assets/img/review.png" />
             </div>
             <div class="swiper-slide">
-              <img src="./assets/svg/show-more-photo.svg" />
+              <img id="show-more" src="./assets/svg/show-more-photo.svg" />
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -251,13 +250,30 @@
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      const swiperWrapper = document.querySelector(".swiper-wrapper");
       const swiper = new Swiper(".swiper", {
         direction: "horizontal",
+        slidesPerView: "1.170",
+        spaceBetween: 6.04,
         loop: false,
         pagination: {
           el: ".swiper-pagination",
           clickable: false,
         },
+        on: {
+          reachEnd: function () {
+            this.params.slidesPerView = "1.4";
+            swiperWrapper.style.paddingLeft = "5rem";
+            this.update();
+          },
+          slideChange: function () {
+            if (!this.isEnd) {
+              swiperWrapper.style.paddingLeft = "0px";
+              this.update();
+            }
+          },
+        },
       });
     </script>
   </body>
+</html>
