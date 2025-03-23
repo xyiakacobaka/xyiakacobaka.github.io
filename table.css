@@ -124,10 +124,10 @@
   .swiper-wrapper {
     height: 12.75rem !important;
   }
-  .swiper-slide {
-    width: 19rem !important;
+  .swiper .swiper-wrapper .swiper-slide {
+    width: 19rem;
   }
-  .swiper-slide img {
-    height: 12.75rem !important;
+  #show-more {
+    width: 8.75rem;
   }
 }

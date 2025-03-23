@@ -92,9 +92,26 @@
               </div>
             </div>
           </div>
-          <a id="instuction" href="#">
+          <a id="instuction" href="#" class="instruction-link">
             Инструкция: Что делать, если магазин не открывается
           </a>
+          <!-- Модальное окно -->
+          <div class="modal-instruction">
+            <div class="modal-content">
+              <span class="close-modal">&times;</span>
+              <h2>Инструкция</h2>
+              <div class="modal-text">
+                <p><strong>Шаг 1:</strong> Проверьте интернет-соединение</p>
+                <p><strong>Шаг 2:</strong> Обновите страницу (Ctrl + F5)</p>
+                <p><strong>Шаг 3:</strong> Очистите кеш браузера</p>
+                <p><strong>Шаг 4:</strong> Попробуйте другой браузер</p>
+                <p>
+                  <strong>Шаг 5:</strong> Если проблема сохраняется, напишите в
+                  поддержку
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="frame4">
           <div id="label-container">
@@ -177,8 +194,8 @@
             <div class="swiper-slide">
               <img src="./assets/img/review.png" />
             </div>
-            <div class="swiper-slide">
-              <img id="show-more" src="./assets/svg/show-more-photo.svg" />
+            <div class="swiper-slide" id="show-more">
+              <img src="./assets/svg/show-more-photo.svg" />
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -197,16 +214,40 @@
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./assets/img/review.png" />
+              <video muted class="video-player" onclick="toggleVideo(this)">
+                <source src="./assets/video/trenbolon.mp4" type="video/mp4" />
+                Ваш браузер не поддерживает тег video.
+              </video>
+              <img
+                src="./assets/svg/play-button.svg" class="play"
+                alt="Play"
+                onclick="playVideo(this)" />
             </div>
             <div class="swiper-slide">
-              <img src="./assets/img/review.png" />
+              <video muted class="video-player" onclick="toggleVideo(this)">
+                <source src="./assets/video/2x2Trenbolon.mp4"
+                  type="video/mp4" />
+                Ваш браузер не поддерживает тег video.
+              </video>
+              <img
+                src="./assets/svg/play-button.svg"
+                class="play"
+                alt="Play"
+                onclick="playVideo(this)" />
             </div>
             <div class="swiper-slide">
-              <img src="./assets/img/review.png" />
+              <video muted class="video-player" onclick="toggleVideo(this)">
+                <source src="./assets/video/2x2Trenbolon.mp4"
+                  type="video/mp4" />
+                Ваш браузер не поддерживает тег video.
+              </video>
+              <img
+                src="./assets/svg/play-button.svg" class="play"
+                alt="Play"
+                onclick="playVideo(this)" />
             </div>
-            <div class="swiper-slide">
-              <p>Все фото</p>
+            <div class="swiper-slide" id="show-more">
+              <img src="./assets/svg/show-more-photo.svg" />
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -250,30 +291,22 @@
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      const swiperWrapper = document.querySelector(".swiper-wrapper");
       const swiper = new Swiper(".swiper", {
         direction: "horizontal",
-        slidesPerView: "1.170",
+        slidesPerView: "auto",
         spaceBetween: 6.04,
         loop: false,
         pagination: {
           el: ".swiper-pagination",
           clickable: false,
         },
-        on: {
-          reachEnd: function () {
-            this.params.slidesPerView = "1.4";
-            swiperWrapper.style.paddingLeft = "5rem";
-            this.update();
-          },
-          slideChange: function () {
-            if (!this.isEnd) {
-              swiperWrapper.style.paddingLeft = "0px";
-              this.update();
-            }
+        breakpoints: {
+          768: {
+            spaceBetween: 8,
           },
         },
       });
     </script>
+    <script src="./index.js"></script>
   </body>
 </html>

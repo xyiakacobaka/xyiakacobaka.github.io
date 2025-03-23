@@ -364,6 +364,61 @@ h2 {
   text-decoration-line: underline;
   color: #ff9900;
 }
+
+.modal-instruction {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  animation: modalSlide 0.3s ease-out;
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-text {
+  line-height: 1.6;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+.modal-content h2 {
+  color: #232323;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.modal-text p {
+  color: #232323;
+}
+
+@keyframes modalSlide {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 #frame4 {
   display: flex;
   flex-direction: column;
@@ -590,6 +645,31 @@ h2 {
   line-height: 1.25rem;
   color: #ff9900;
 }
+
+.video-player {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.swiper-slide .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3.125rem;
+  height: 3.125rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.play.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .swiper {
   display: flex !important;
   flex-direction: column;
@@ -600,11 +680,20 @@ h2 {
 .swiper .swiper-wrapper {
   height: 10rem;
 }
+.swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: start;
+  width: 14.901875rem;
+  box-sizing: border-box;
+}
 .swiper-slide img {
   width: 100%;
   height: 100%;
 }
-.swiper-slide #show-more {
+#show-more {
+  width: 6.875rem;
+}
+#show-more img {
   width: unset;
 }
 .swiper-pagination {
